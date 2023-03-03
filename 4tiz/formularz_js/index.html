@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restauracja Wszystkie Smaki</title>
+    <link rel="stylesheet" href="styl.css">
+    <script src="skrypt.js"></script>
+</head>
+<body onload="boom()">
+    <section id="banner">
+        <h1>Witamy w restauracji "Wszystkie Smaki"</h1>
+    </section>
+    <section id="panel_left">
+        <img src="menu.jpg" alt="Nasze danie">
+    </section>
+    <section id="panel_right">
+        <h4>U nas dobrze zjesz!</h4>
+        <ol>
+            <li>Obiady od 40zł</li>
+            <li>Przekąski od 10zł</li>
+            <li>Kolacje od 20zł</li>
+        </ol>
+    </section>
+    <section id="panel_bot">
+        <h2>Zarezerwuj stolik online</h2>
+        <form method="post" action="rezerwacja.php">
+            Data (format rrrr-mm-dd):
+            <br>
+            <input type="date" name="data">
+            <br>
+            Ile osób?
+            <br>
+            <input type="number" name="osoby">
+            <br>
+            Twój numer telefonu:
+            <br>
+            <input type="text" name="telefon">
+            <br>
+            <input type="checkbox" name="zgoda"> Zgadzam się na przetwarzanie moich danych osobowych
+            <br>
+            <input id="przycisk" type="reset" name="wyczysc" value="WYRZYŚĆ">
+            <input onclick="boom()" id="przycisk" type="submit" name="rezerwuj" value="REZERWUJ">
+            <input src="skrypt.js" id="srcipt" type="submit" name="script" value="js"> 
+        </form>
+    </section>
+    <section id="footer">
+        Stronę internetową opracował: Hubgej
+    </section>
+
+</body>
+</html>
